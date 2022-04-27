@@ -68,21 +68,21 @@ Essentially Sepsis 3 requires documentation of a pathophysiological responce to 
 - cxdf *(pandas.DataFrame)*  -- Culture DataFrame (See Above)
 - vasodf *(pandas.DataFrame)* -- Vasopressor DataFrame (See Above)
 - uodf *(pandas.DataFrame)*  -- Urine Output DataFrame (See Above)
-- demo *(pandas.DataFrame, None)*  -- Demographics DataFame **(Not Needed unless Qualifying Antibiotics Days Parameter is used which is not needed for the usual Implementation of Sepsis-3)**
-- SF_dict *(dict)* -- 
-- calc_FiO2 *(bool)*
-- calc_PF *(bool)*
-- calc_SF *(bool)*
-- max_flow_convert *(int)*
-- calc_interval_mins *(int)*
-- LOCF_hours *(int, None)*
-- include_SF_RATIO *(bool)*
-- mech_vent_def *('VENT', 'VENT/NIPPV, None)*
-- gcs_cutoff *(int)*
-- debug *(bool)*
-- cutoff *(int)*
-- include_qSOFA *(bool)*
-- QAD *(int, None)*
+- demo *(pandas.DataFrame, None)*  -- Demographics DataFame **(Not needed unless Qualifying Antibiotics Days Parameter is used which is not needed for the usual implementation of Sepsis-3)**
+- SF_dict *(dict)* -- dict to relate SF/Ratios and SOFA Resp score if considering SF Ratios
+- calc_FiO2 *(bool)* -- Calculate FiO2 from O2_Flow
+- calc_PF *(bool)* -- Calculate PF Ratio 
+- calc_SF *(bool)* -- Calculate SF Ratio
+- max_flow_convert *(int)* -- Maximum flow rate of O2 to consider for calculating FiO2
+- calc_interval_mins *(int)* -- interval to calculate SOFA and qSOFA scores (in min)
+- LOCF_hours *(int, None)* -- Hours to look back and perform Last Observation Carried Forward, if None no LOCF performed
+- include_SF_RATIO *(bool)* -- Consider SF Ratio
+- mech_vent_def *('VENT', 'VENT/NIPPV, None)* -- Definition used for mechancial ventilation if None criteria of mechanical ventilation for respiratory subscore >2 is not enforced
+- gcs_cutoff *(int)* -- GCS cuff off for qSOFA
+- debug *(bool)* -- verbose output for error checking
+- cutoff *(int)* -- cut off for RTI
+- include_qSOFA *(bool)* -- Consider qSOFA for RTI
+- QAD *(int, None)* -- Qualifying Antibiotic Days **(Not Needed for the usual implemenation of Sepsis-3)**
 
 ##### Output:
 <br>
