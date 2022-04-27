@@ -7,7 +7,7 @@ Use of the I2 Sepsis Pipeline requires data to be transformed into the Minimal S
 <br>
 <br>
 The stucture of the Minimal Sepsis Data Model is outlined below.
-### Overview
+### Overview:
 
 <p align="center">
   <img width="600" height="600" src="/Images/Minimal-Sepsis-Datamodel-min.svg">
@@ -17,9 +17,27 @@ the Admission Discharge Transfer (adt), Lab and Vitals (lvdf), Mechancial Ventil
 <br>
 <br>
 
-### ADT
+### ADT:
 
 <p align="center">
   <img width="600" height="600" src="/Images/adt.svg">
+</p>
+
+### LVDF:
+
+<p align="center">
+  <img width="600" height="600" src="/Images/lvdf.svg">
+</p>
+
+### MVDF:
+
+<p align="center">
+  <img width="600" height="600" src="/Images/mvdf.svg">
+</p>
+
+### VASODF:
+
+<p align="center">
+  <img width="600" height="600" src="/Images/vasodf.svg">
 </p>
 
