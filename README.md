@@ -11,5 +11,13 @@ The stucture of the Minimal Sepsis Data Model is outlined below.
 <p align="center">
   <img width="600" height="600" src="/Images/Minimal-Sepsis-Datamodel-min.svg">
 </p>
+<br>
+the Admission Discharge Transfer (adt), Lab and Vitals (lvdf), Mechancial Ventilation (mvdf) and Vasopressor (vasodf) DataFrames require inputs with sepcific strings outlined below
+<br>
+<br>
+### adt
 
+<p align="center">
+  <img width="600" height="600" src="/Images/adt.svg">
+</p>
 
