@@ -76,5 +76,21 @@ score_SOFA(lvdf=None, adt=None, mvdf=None, vasodf=None, uodf=None, SF_dict={1: 5
 - cutoff
 
 ##### Output:
+<br>
+
+#### qSOFA:
+def score_qSOFA(lvdf=None, adt=None, calc_interval_mins=None, LOCF_hours=None, debug=False, gcs_cutoff=15, cutoff=2):
+
+##### Parameters:
+- lvdf
+- adt
+- calc_interval_mins
+- LOCF_hours
+- debug
+- gcs_cutoff
+- cutoff
+
+##### Output:
+- test
 
 
