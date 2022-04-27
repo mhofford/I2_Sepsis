@@ -50,7 +50,11 @@ the Admission Discharge Transfer (adt), Lab and Vitals (lvdf), Mechancial Ventil
 Essentially Sepsis 3 requires documentation of a pathophysiological responce to infection (RTI) as demonstrated by a SOFA score >=2 in the ICU or a aSOFA score >=2 if not in the ICU as well a documentation of clinical suspicion of infection (SOI) demonstated by collection of cultures and administration of antibiotics within the defined time period
 <br>
 <br>
+
 ### Responce to Infection (RTI)
+
 <br> 
+
 #### SOFA
+
 <br>
