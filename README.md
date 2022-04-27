@@ -85,7 +85,7 @@ Essentially Sepsis 3 requires documentation of a pathophysiological responce to 
 - QAD
 
 ##### Output:
-- test
+<br>
 
 
 ### Responce to Infection (RTI):
@@ -132,7 +132,7 @@ def score_qSOFA(lvdf=None, adt=None, calc_interval_mins=None, LOCF_hours=None, d
 - cutoff
 
 ##### Output:
-- test
+<br>
 
 ### Suspicion of Infection (SOI):
 #### SOI:
@@ -141,10 +141,19 @@ SOI(abxdf=None, cxdf=None, adt=None, qad=None, mortadj=False, demo=None,  Req_Do
 **Finds Suspicion of Infection**
 
 ##### Parameters:
-- test
+- abxdf
+- cxdf
+- adt
+- qad
+- mortadj
+- demo
+- Req_Dose  
+- lookforward_cx
+- lookforward_abx 
+- soitime
 
 ##### Output:
-- test
+<br>
 
 #### QAD:
 QAD(adf=None, QAD=4, mortadj=False, IVadj=False, Req_Dose=2, demo=None, dispo_dec=['dead', 'hospice'])
@@ -157,10 +166,16 @@ QAD(adf=None, QAD=4, mortadj=False, IVadj=False, Req_Dose=2, demo=None, dispo_de
     If death or discharge to another acute care hospital or hospice occurs prior to 4 days, QADs are required each day until 1 day or less prior to death or discharge.**
 
 ##### Parameters:
-- test
+- adf
+- QAD
+- mortadj
+- IVadj
+- Req_Dose
+- demo
+- dispo_dec
 
 ##### Output:
-- test
+<br>
 
 
 
