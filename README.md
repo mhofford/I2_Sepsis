@@ -56,8 +56,4 @@ Essentially Sepsis 3 requires documentation of a pathophysiological responce to 
 
 #### SOFA:
 <br>
-score_SOFA(lvdf=None, adt=None, mvdf=None, dxdf=None, vasodf=None, uodf=None,
-               SF_dict={1: 512, 2: 357, 3: 214, 4: 89}, calc_FiO2=False, calc_PF=False, calc_SF=False,
-               max_flow_convert=6,
-               calc_interval_mins=None, LOCF_hours=None, include_SF_RATIO=False, mech_vent_def=None, debug=False,
-               cutoff=2):
+score_SOFA(lvdf=None, adt=None, mvdf=None, dxdf=None, vasodf=None, uodf=None, SF_dict={1: 512, 2: 357, 3: 214, 4: 89}, calc_FiO2=False, calc_PF=False, calc_SF=False, max_flow_convert=6, calc_interval_mins=None, LOCF_hours=None, include_SF_RATIO=False, mech_vent_def=None, debug=False, cutoff=2):
