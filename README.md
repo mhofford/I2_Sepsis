@@ -51,9 +51,8 @@ Essentially Sepsis 3 requires documentation of a pathophysiological responce to 
 <br>
 <br>
 
-### Responce to Infection (RTI)
+### Responce to Infection (RTI):
 
 
-#### SOFA
-
+#### SOFA:
 <br>
