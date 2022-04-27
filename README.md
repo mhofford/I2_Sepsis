@@ -46,6 +46,19 @@ the Admission Discharge Transfer (adt), Lab and Vitals (lvdf), Mechancial Ventil
 |Definition| Infection | Antiinfectives | Cultures | Responce to Infection| Time Constraints| Time Zero | 
 | -- | -- | -- | -- | -- | -- | -- |
 |Sepsis-3 | Concominant cultures and antiinfectives| All oral and IV antiinfectives except one-time or perioperative antiinfectives | All bacterial fungal, viral, and preacitic cultures as well as C-diff assays| SOFA in the ICU, qSOFA elsewhere | Cultures followed by antiinfective within 72 hr or antiinfective followed by cultures within 24 hr qSOFA or SOFA met between 48hr before and 24 hours after earlier of culture or antiinfective|Earlier of either Culture collection or antiinfective initiation|
+
+### Sepsis-3:
+ Sepsis_3(lvdf=None, adt=None, mvdf= None,  abxdf = None, cxdf = None, vasodf=None, uodf=None, demo=None,  SF_dict = {1:512,2:357,3:214,4:89}, calc_FiO2 = True, calc_PF = True, calc_SF= False, max_flow_convert= 6, calc_interval_mins = 60, LOCF_hours = None, include_SF_RATIO = True, mech_vent_def = 'VENT/NIPPV', gcs_cutoff = 15, debug = False, cutoff = 2,include_qSOFA = True, QAD = None)
+<br>
+**Calculates Time of Onset of Sepsis-3**
+ 
+##### Parameters:
+- test
+
+##### Output:
+- test
+
+
 <br>
 Essentially Sepsis 3 requires documentation of a pathophysiological responce to infection (RTI) as demonstrated by a SOFA score >=2 in the ICU or a aSOFA score >=2 if not in the ICU as well a documentation of clinical suspicion of infection (SOI) demonstated by collection of cultures and administration of antibiotics within the defined time period
 <br>
@@ -79,7 +92,7 @@ score_SOFA(lvdf=None, adt=None, mvdf=None, vasodf=None, uodf=None, SF_dict={1: 5
 <br>
 
 #### qSOFA:
-def score_qSOFA(lvdf=None, adt=None, calc_interval_mins=None, LOCF_hours=None, debug=False, gcs_cutoff=15, cutoff=2):
+def score_qSOFA(lvdf=None, adt=None, calc_interval_mins=None, LOCF_hours=None, debug=False, gcs_cutoff=15, cutoff=2)
 
 ##### Parameters:
 - lvdf
@@ -94,4 +107,25 @@ def score_qSOFA(lvdf=None, adt=None, calc_interval_mins=None, LOCF_hours=None, d
 - test
 
 ### Suspicion of Infection (SOI):
+#### SOI:
+SOI(abxdf=None, cxdf=None, adt=None, qad=None, mortadj=False, demo=None,  Req_Dose=2, lookforward_cx=pd.Timedelta(72, 'h'), lookforward_abx=pd.Timedelta(24, 'h'), soitime='first')
+
+##### Parameters:
+- test
+
+##### Output:
+- test
+
+#### QAD:
+QAD(adf=None, QAD=4, mortadj=False, IVadj=False, Req_Dose=2, demo=None, dispo_dec=['dead', 'hospice'])
+
+##### Parameters:
+- test
+
+##### Output:
+- test
+
+
+
+
 
