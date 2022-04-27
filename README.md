@@ -7,6 +7,7 @@ Use of the I2 Sepsis Pipeline requires data to be transformed into the Minimal S
 <br>
 <br>
 The stucture of the Minimal Sepsis Data Model is outlined below.
+### Overview
 
 <p align="center">
   <img width="600" height="600" src="/Images/Minimal-Sepsis-Datamodel-min.svg">
