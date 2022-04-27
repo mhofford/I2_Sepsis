@@ -93,4 +93,5 @@ def score_qSOFA(lvdf=None, adt=None, calc_interval_mins=None, LOCF_hours=None, d
 ##### Output:
 - test
 
+### Suspicion of Infection (SOI):
 
