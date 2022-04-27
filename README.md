@@ -68,7 +68,7 @@ Essentially Sepsis 3 requires documentation of a pathophysiological responce to 
 - cxdf *(pandas.DataFrame)*  -- Culture DataFrame (See Above)
 - vasodf *(pandas.DataFrame)* -- Vasopressor DataFrame (See Above)
 - uodf *(pandas.DataFrame)*  -- Urine Output DataFrame (See Above)
-- demo *(pandas.DataFrame, None)*  -- Demographics DataFame **Not Needed unless Qualifying Antibiotics Days Parameter is used which is not needed for the usual Implementation of Sepsis-3**
+- demo *(pandas.DataFrame, None)*  -- Demographics DataFame **(Not Needed unless Qualifying Antibiotics Days Parameter is used which is not needed for the usual Implementation of Sepsis-3)**
 - SF_dict *(dict)* -- 
 - calc_FiO2 *(bool)*
 - calc_PF *(bool)*
