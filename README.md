@@ -120,6 +120,8 @@ score_SOFA(lvdf=None, adt=None, mvdf=None, vasodf=None, uodf=None, SF_dict={1: 5
 #### qSOFA:
 def score_qSOFA(lvdf=None, adt=None, calc_interval_mins=None, LOCF_hours=None, debug=False, gcs_cutoff=15, cutoff=2)
 
+**Calculates qSOFA score for cohort at a user specified interval**
+
 ##### Parameters:
 - lvdf
 - adt
@@ -136,6 +138,8 @@ def score_qSOFA(lvdf=None, adt=None, calc_interval_mins=None, LOCF_hours=None, d
 #### SOI:
 SOI(abxdf=None, cxdf=None, adt=None, qad=None, mortadj=False, demo=None,  Req_Dose=2, lookforward_cx=pd.Timedelta(72, 'h'), lookforward_abx=pd.Timedelta(24, 'h'), soitime='first')
 
+**Finds Suspicion of Infection**
+
 ##### Parameters:
 - test
 
@@ -144,6 +148,13 @@ SOI(abxdf=None, cxdf=None, adt=None, qad=None, mortadj=False, demo=None,  Req_Do
 
 #### QAD:
 QAD(adf=None, QAD=4, mortadj=False, IVadj=False, Req_Dose=2, demo=None, dispo_dec=['dead', 'hospice'])
+
+**Finds Qualifying Antibiotic Days
+    Based on: https://jamanetwork.com/journals/jama/fullarticle/2654187
+    QADs start with the first “new” antibiotic (not given in the prior 2 calendar days) within the ±2-day period surrounding the day of the blood culture draw.
+    Subsequent QADs can be different antibiotics as long as the first dose of each is “new.”
+    Days between administration of the same antibiotic count as QADs as long as the gap is not more than 1 day. At least 1 of the first 4 QADs must include an intravenous antibiotic.
+    If death or discharge to another acute care hospital or hospice occurs prior to 4 days, QADs are required each day until 1 day or less prior to death or discharge.**
 
 ##### Parameters:
 - test
