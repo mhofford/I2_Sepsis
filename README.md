@@ -61,7 +61,7 @@ Essentially Sepsis 3 requires documentation of a pathophysiological responce to 
 **Calculates Time of Onset of Sepsis-3**
  
 ##### Parameters:
-- lvdf *(pandas.DataFrame)* 
+- lvdf *(pandas.DataFrame)* -- 
 - adt *(pandas.DataFrame)* 
 - mvdf *(pandas.DataFrame)* 
 - abxdf *(pandas.DataFrame)* 
