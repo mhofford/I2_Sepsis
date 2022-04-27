@@ -75,14 +75,14 @@ Essentially Sepsis 3 requires documentation of a pathophysiological responce to 
 - calc_SF *(bool)*
 - max_flow_convert *(int)*
 - calc_interval_mins *(int)*
-- LOCF_hours *(int,None)*
+- LOCF_hours *(int, None)*
 - include_SF_RATIO *(bool)*
-- mech_vent_def *('VENT','VENT/NIPPV,None)*
+- mech_vent_def *('VENT', 'VENT/NIPPV, None)*
 - gcs_cutoff *(int)*
 - debug *(bool)*
 - cutoff *(int)*
 - include_qSOFA *(bool)*
-- QAD *(int,None)*
+- QAD *(int, None)*
 
 ##### Output:
 <br>
