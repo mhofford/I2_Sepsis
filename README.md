@@ -158,8 +158,8 @@ SOI(abxdf=None, cxdf=None, adt=None, qad=None, mortadj=False, demo=None,  Req_Do
 #### QAD:
 QAD(adf=None, QAD=4, mortadj=False, IVadj=False, Req_Dose=2, demo=None, dispo_dec=['dead', 'hospice'])
 
-**Finds Qualifying Antibiotic Days <br>
-    Based on: https://jamanetwork.com/journals/jama/fullarticle/2654187 <br>
+**Finds Qualifying Antibiotic Days <br><br>
+    Based on: https://jamanetwork.com/journals/jama/fullarticle/2654187 <br><br>
     QADs start with the first “new” antibiotic (not given in the prior 2 calendar days) within the ±2-day period surrounding the day of the blood culture draw.
     Subsequent QADs can be different antibiotics as long as the first dose of each is “new.” Days between administration of the same antibiotic count as QADs as long as the gap is not more than 1 day. At least 1 of the first 4 QADs must include an intravenous antibiotic. If death or discharge to another acute care hospital or hospice occurs prior to 4 days, QADs are required each day until 1 day or less prior to death or discharge.**
 
