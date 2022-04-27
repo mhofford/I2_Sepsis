@@ -61,14 +61,14 @@ Essentially Sepsis 3 requires documentation of a pathophysiological responce to 
 **Calculates Time of Onset of Sepsis-3**
  
 ##### Parameters:
-- lvdf
-- adt
-- mvdf
-- abxdf
-- cxdf
-- vasodf
-- uodf
-- demo
+- lvdf(pandas.DataFrame) 
+- adt(pandas.DataFrame) 
+- mvdf(pandas.DataFrame) 
+- abxdf(pandas.DataFrame) 
+- cxdf(pandas.DataFrame) 
+- vasodf(pandas.DataFrame) 
+- uodf(pandas.DataFrame) 
+- demo(pandas.DataFrame) 
 - SF_dict
 - calc_FiO2
 - calc_PF
@@ -79,7 +79,7 @@ Essentially Sepsis 3 requires documentation of a pathophysiological responce to 
 - include_SF_RATIO
 - mech_vent_def
 - gcs_cutoff
-- debug = False
+- debug
 - cutoff
 - include_qSOFA
 - QAD
@@ -97,11 +97,11 @@ score_SOFA(lvdf=None, adt=None, mvdf=None, vasodf=None, uodf=None, SF_dict={1: 5
 <br>
 **Calculates SOFA score at a user specified interval**
 ##### Parameters:
-- lvdf
-- adt
-- mvdf
-- vasodf
-- uodf
+- lvdf(pandas.DataFrame) 
+- adt(pandas.DataFrame) 
+- mvdf(pandas.DataFrame) 
+- vasodf(pandas.DataFrame) 
+- uodf(pandas.DataFrame) 
 - SF_dict 
 - calc_FiO2
 - calc_PF
@@ -123,8 +123,8 @@ def score_qSOFA(lvdf=None, adt=None, calc_interval_mins=None, LOCF_hours=None, d
 **Calculates qSOFA score for cohort at a user specified interval**
 
 ##### Parameters:
-- lvdf
-- adt
+- lvdf(pandas.DataFrame) 
+- adt(pandas.DataFrame) 
 - calc_interval_mins
 - LOCF_hours
 - debug
@@ -141,9 +141,9 @@ SOI(abxdf=None, cxdf=None, adt=None, qad=None, mortadj=False, demo=None,  Req_Do
 **Finds Suspicion of Infection**
 
 ##### Parameters:
-- abxdf
-- cxdf
-- adt
+- abxdf(pandas.DataFrame) 
+- cxdf(pandas.DataFrame) 
+- adt(pandas.DataFrame) 
 - qad
 - mortadj
 - demo
@@ -166,12 +166,12 @@ QAD(adf=None, QAD=4, mortadj=False, IVadj=False, Req_Dose=2, demo=None, dispo_de
     If death or discharge to another acute care hospital or hospice occurs prior to 4 days, QADs are required each day until 1 day or less prior to death or discharge.**
 
 ##### Parameters:
-- adf
+- adf(pandas.DataFrame) 
 - QAD
 - mortadj
 - IVadj
 - Req_Dose
-- demo
+- demo(pandas.DataFrame) 
 - dispo_dec
 
 ##### Output:
