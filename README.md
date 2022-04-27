@@ -69,20 +69,20 @@ Essentially Sepsis 3 requires documentation of a pathophysiological responce to 
 - vasodf *(pandas.DataFrame)* 
 - uodf *(pandas.DataFrame)* 
 - demo *(pandas.DataFrame)* 
-- SF_dict
-- calc_FiO2
-- calc_PF
-- calc_SF
-- max_flow_convert
-- calc_interval_mins
-- LOCF_hours
-- include_SF_RATIO
-- mech_vent_def
-- gcs_cutoff
-- debug
-- cutoff
-- include_qSOFA
-- QAD
+- SF_dict *(dict)*
+- calc_FiO2 *(bool)*
+- calc_PF *(bool)*
+- calc_SF *(bool)*
+- max_flow_convert *(int)*
+- calc_interval_mins *(int)*
+- LOCF_hours *(int,None)*
+- include_SF_RATIO *(bool)*
+- mech_vent_def *('VENT','VENT/NIPPV,None)*
+- gcs_cutoff *(int)*
+- debug *(bool)*
+- cutoff *(int)*
+- include_qSOFA *(bool)*
+- QAD *(int,None)*
 
 ##### Output:
 <br>
