@@ -97,22 +97,22 @@ score_SOFA(lvdf=None, adt=None, mvdf=None, vasodf=None, uodf=None, SF_dict={1: 5
 <br>
 **Calculates SOFA score at a user specified interval**
 ##### Parameters:
-- lvdf *(pandas.DataFrame)* 
-- adt *(pandas.DataFrame)* 
-- mvdf *(pandas.DataFrame)* 
-- vasodf *(pandas.DataFrame)* 
-- uodf *(pandas.DataFrame)* 
-- SF_dict 
-- calc_FiO2
-- calc_PF
-- calc_SF
-- max_flow_convert
-- calc_interval_mins
-- LOCF_hours
-- include_SF_RATIO
-- mech_vent_def
-- debug
-- cutoff
+- lvdf *(pandas.DataFrame)* -- Labs and Vitals DataFrame (See Above)
+- adt *(pandas.DataFrame)* -- Admission Discharge Transfer DataFrame (See Above)
+- mvdf *(pandas.DataFrame)*  -- Mechancial Ventilation DataFrame (See Above)
+- vasodf *(pandas.DataFrame)* -- Vasopressor DataFrame (See Above)
+- uodf *(pandas.DataFrame)* -- Urine Output DataFrame (See Above)
+- SF_dict -- dict to relate SF/Ratios and SOFA Resp score if considering SF Ratios
+- calc_FiO2 -- Calculate FiO2 from O2_Flow
+- calc_PF -- Calculate PF Ratio 
+- calc_SF -- Calculate SF Ratio
+- max_flow_convert -- Maximum flow rate of O2 to consider for calculating FiO2
+- calc_interval_mins -- interval to calculate SOFA and qSOFA scores (in min)
+- LOCF_hours -- Hours to look back and perform Last Observation Carried Forward, if None no LOCF performed
+- include_SF_RATIO -- Consider SF Ratio
+- mech_vent_def -- Definition used for mechancial ventilation if None criteria of mechanical ventilation for respiratory subscore >2 is not enforced
+- debug -- verbose output for error checking
+- cutoff -- cut off for RTI
 
 ##### Output:
 <br>
@@ -123,13 +123,13 @@ def score_qSOFA(lvdf=None, adt=None, calc_interval_mins=None, LOCF_hours=None, d
 **Calculates qSOFA score for cohort at a user specified interval**
 
 ##### Parameters:
-- lvdf *(pandas.DataFrame)* 
-- adt *(pandas.DataFrame)* 
-- calc_interval_mins
-- LOCF_hours
-- debug
-- gcs_cutoff
-- cutoff
+- lvdf *(pandas.DataFrame)* -- Labs and Vitals DataFrame (See Above)
+- adt *(pandas.DataFrame)* -- Admission Discharge Transfer DataFrame (See Above)
+- calc_interval_mins  -- interval to calculate SOFA and qSOFA scores (in min)
+- LOCF_hours -- Hours to look back and perform Last Observation Carried Forward, if None no LOCF performed
+- debug -- verbose output for error checking
+- gcs_cutoff -- GCS cuff off for qSOFA
+- cutoff -- cut off for RTI
 
 ##### Output:
 <br>
@@ -141,11 +141,11 @@ SOI(abxdf=None, cxdf=None, adt=None, qad=None, mortadj=False, demo=None,  Req_Do
 **Finds Suspicion of Infection**
 
 ##### Parameters:
-- abxdf *(pandas.DataFrame)* 
-- cxdf *(pandas.DataFrame)* 
-- adt *(pandas.DataFrame)* 
-- qad
-- mortadj
+- abxdf *(pandas.DataFrame)* -- Antibiotic DataFrame (See Above)
+- cxdf *(pandas.DataFrame)*  -- Culture DataFrame (See Above)
+- adt *(pandas.DataFrame)* -- Admission Discharge Transfer DataFrame (See Above)
+- qad  -- Qualifying Antibiotic Days **(Not Needed for the usual implemenation of Sepsis-3)**
+- mortadj - Adjust 
 - demo
 - Req_Dose  
 - lookforward_cx
