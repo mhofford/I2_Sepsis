@@ -85,7 +85,6 @@ Essentially Sepsis 3 requires documentation of a pathophysiological responce to 
 - QAD *(int, None)* -- Qualifying Antibiotic Days **(Not Needed for the usual implemenation of Sepsis-3)**
 
 ##### Output:
-<br>
 - Sepsis_3 *(pandas.DataFrame)* -- DataFrame containing patients who met Sepsis-3 criteria and time onset 
 - SOI_Full *(pandas.DataFrame)* -- DataFrame containing all  patients who met suspicion of infection criteria
 - RTI_Full *(pandas.DataFrame)* -- DataFrame containing SOFA and or qSOFA Scoare for patients who met suspicion of infection criteria
@@ -117,7 +116,6 @@ score_SOFA(lvdf=None, adt=None, mvdf=None, vasodf=None, uodf=None, SF_dict={1: 5
 - cutoff *(int)* -- cut off for RTI
 
 ##### Output:
-<br>
 qSOFA *(pandas.DataFrame)* -- DataFrame containing SOFA scores for the specified cohort
 
 #### qSOFA:
@@ -135,7 +133,6 @@ def score_qSOFA(lvdf=None, adt=None, calc_interval_mins=None, LOCF_hours=None, d
 - cutoff *(int)* -- cut off for RTI
 
 ##### Output:
-<br>
 - qSOFA *(pandas.DataFrame)* -- DataFrame containing qSOFA scores for the specified cohort
 
 ### Suspicion of Infection (SOI):
@@ -157,7 +154,6 @@ SOI(abxdf=None, cxdf=None, adt=None, qad=None, mortadj=False, demo=None,  Req_Do
 - soitime *('first', 'last', 'abx', 'cx')* --
 
 ##### Output:
-<br>
 - SOI_Full *(pandas.DataFrame)* -- DataFrame containing all  patients who met suspicion of infection criteria
 
 #### QAD:
@@ -178,7 +174,6 @@ QAD(adf=None, QAD=4, mortadj=False, IVadj=False, Req_Dose=2, demo=None, dispo_de
 - dispo_dec *(list of str)* -- List of strings denoting deceased at discharge
 
 ##### Output:
-<br>
 - QAD *(pandas.DataFrame)* -- DataFrame containing episodes that met qualifying antibiotic day critera 
 
 
