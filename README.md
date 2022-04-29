@@ -86,7 +86,7 @@ Essentially Sepsis 3 requires documentation of a pathophysiological responce to 
 
 ##### Output:
 <br>
-- Sepsis_3 *(pandas.DataFrame)* -- DataFrame containing patients who met Sepsis-3 criteria and time onset
+- Sepsis_3 *(pandas.DataFrame)* -- DataFrame containing patients who met Sepsis-3 criteria and time onset 
 - SOI_Full *(pandas.DataFrame)* -- DataFrame containing all  patients who met suspicion of infection criteria
 - RTI_Full *(pandas.DataFrame)* -- DataFrame containing SOFA and or qSOFA Scoare for patients who met suspicion of infection criteria
 
